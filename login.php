@@ -33,14 +33,9 @@
                         <button id="btnlogin" type="submit" class="p-15-25 b-one bg-inherit">Login</button>
                     </div>
                     <div class="prompts p-10-5">
-                        <div class="forgot-password p-20-0">
-                        </div>
-                        <hr>
+                        <div class="forgot-password p-20-0"></div><hr>
                         <div class="create-account p-10-0">
                             <p>Don't have an account ?<a href="/signup.php" class="a" style="color: blue !important;"> Create</a></p>
-                        </div>
-                        <div id="loader">
-
                         </div>
                     </div>
                 </form>
