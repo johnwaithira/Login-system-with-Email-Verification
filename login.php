@@ -25,9 +25,9 @@
                     <div class="b-one p-5-15 m-10-0 ">
                         <input type="text" id="email" placeholder="Email" class="f-s-17 b-n outline-none p-10-15 w-p-100">
                     </div>
-                    <input name='token' id='token' value='589f8d597e123653739c31246ff392b9' type= 'hidden'>                    <div class="b-one p-5-15 m-10-0 display-flex" style="align-items: center;">
+                    <div class="b-one p-5-15 m-10-0 display-flex" style="align-items: center;">
                         <input type="password" style="flex: 1;" id="password" placeholder="Password" class="f-s-17 b-n pass outline-none p-10-15 w-p-100">
-                        <img id="passwordimg"  onclick="tooglepassword()" class="w-25 m-r-10" style="filter:blur(1px); cursor: pointer;" src="">
+                        <img id="passwordimg"  onclick="tooglepassword()" class="w-25 m-r-10" style="filter:blur(1px); cursor: pointer;" src="https://johnwaithira.github.io/kicks_files/svgs/eye-solid.svg">
                     </div>
                     <div class="btn p-t-30">
                         <button id="btnlogin" type="submit" class="p-15-25 b-one bg-inherit">Login</button>
@@ -48,23 +48,6 @@
         </div>
     </div>
     </div>
-    <script>
-
-        let ptoogle = document.getElementById("password");
-        let ptoogleimg = document.getElementById("passwordimg");
-
-        function tooglepassword()
-        {
-            if(ptoogle.type == "password")
-            {
-                ptoogleimg.src = ``;
-                ptoogle.type = "text";
-            }else{
-                ptoogleimg.src = ``;
-                ptoogle.type = "password";
-            }
-
-        }
-       </script>
+    <script src="./password.js"></script>
 </body>
 </html>
