@@ -2,6 +2,13 @@
     require_once __DIR__."/php/db.php";
 
     $db = new Database();
+    #id	user_id	username	firstname	secondname	email	password	created_at
+    $errors = array();
+
+    if(isset($_POST['create']))
+    {
+
+    }
 ?>
 
 <!DOCTYPE html>
@@ -42,7 +49,7 @@
                         <img id="passwordimg"  onclick="tooglepassword()" class="w-25 m-r-10" style="filter:blur(1px); cursor: pointer;" src="http://johnwaithira.github.io/kicks_files/svgs/eye-solid.svg">
                     </div>
                     <div class="btn p-t-30">
-                        <button class="p-10-25 bg-inherit b-one" id="createbtn">Create</button>
+                        <button class="p-10-25 bg-inherit b-one" name="create" id="createbtn">Create</button>
                     </div>
                     <div class="prompts p-10-5">
                         <div class="forgot-password p-20-0"></div><hr>

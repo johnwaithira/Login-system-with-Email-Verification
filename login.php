@@ -30,7 +30,7 @@
                         <img id="passwordimg"  onclick="tooglepassword()" class="w-25 m-r-10" style="filter:blur(1px); cursor: pointer;" src="https://johnwaithira.github.io/kicks_files/svgs/eye-solid.svg">
                     </div>
                     <div class="btn p-t-30">
-                        <button id="btnlogin" type="submit" class="p-15-25 b-one bg-inherit">Login</button>
+                        <button id="btnlogin" type="submit" name="login" class="p-15-25 b-one bg-inherit">Login</button>
                     </div>
                     <div class="prompts p-10-5">
                         <div class="forgot-password p-20-0"></div><hr>
