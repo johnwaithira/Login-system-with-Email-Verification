@@ -1,4 +1,9 @@
 
+<?php
+    require_once __DIR__."/php/db.php";
+
+    $db = new Database();
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,7 +12,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
     <link rel="stylesheet" href="http://127.0.0.1/shoetailor/ke/css/style.css">
-    <link rel="stylesheet" href="http://127.0.0.1/projects/passwift/popup.css">
 </head>
 <body>
    <div class="body">
@@ -15,9 +19,6 @@
         <div class="form-box col-4 col-s-8 m-a">
             <div class="p-20 box-shadow1">
                 <form id="loginform" class=" p-10 m-t-20">
-                    <div class="logo-box w-p-100 text-center">
-                        <img src="" style="width: 110px !important;">
-                    </div>
                     <div class="form-head p-20-0">
                         <h1 class="color_fade">Login</h1>
                     </div>
