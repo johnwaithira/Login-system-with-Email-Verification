@@ -3,10 +3,11 @@
 
     #id	user_id	username	firstname	secondname	email	password	created_at
     $errors = array();
+    extract($_POST);
 
     if(isset($_POST['create']))
     {
-        $db = new Database();
+       foreach($_POST as $key)
         
     }
 ?>
