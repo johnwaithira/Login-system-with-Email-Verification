@@ -8,3 +8,8 @@ function tooglepassword()
         ptoogleimg.src = `http://johnwaithira.github.io/kicks_files/svgs/eye-solid.svg`;
         ptoogle.type = "password";}
 }
+
+if(window.history.replaceState)
+{
+    window.history.replaceState(null, null, window.location.href)
+}

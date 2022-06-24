@@ -1,13 +1,13 @@
 <?php
     require_once __DIR__."/php/db.php";
 
-    $db = new Database();
     #id	user_id	username	firstname	secondname	email	password	created_at
     $errors = array();
 
     if(isset($_POST['create']))
     {
-
+        $db = new Database();
+        
     }
 ?>
 
@@ -26,7 +26,7 @@
     <div class="form m-20-10">
         <div class="form-box col-4 col-s-8 m-a">
             <div class="p-10 box-shadow1 ">
-                <form id="signinform" class=" p-10 m-t-20">
+                <form id="signinform" class=" p-10 m-t-20" method="post">
                     <div class="logo-box w-p-100 text-center"></div>
                     <div class="form-head p-20-0"><h1 class="color_fade">Create Acc</h1></div>
                     <div class="name-place display-flex">
