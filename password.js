@@ -9,6 +9,8 @@ function tooglepassword()
         ptoogle.type = "password";}
 }
 
+// Prevent form reload
+
 if(window.history.replaceState)
 {
     window.history.replaceState(null, null, window.location.href)
