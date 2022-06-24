@@ -20,7 +20,6 @@
                     <div class="form-head p-20-0">
                         <h1 class="color_fade">Create Acc</h1>
                     </div>
-
                     <div class="name-place display-flex">
                         <div class="Firstname col-6 ">
                             <div class="b-one p-5-15 m-t-5 ">
@@ -34,10 +33,10 @@
                         </div>
                     </div>
                     <div class="b-one p-5-15 m-t-10 ">
-                        <input type="text" id="email" placeholder="Email" class="f-s-17 b-n outline-none p-10-15 w-p-100">
+                        <input type="text" id="email" placeholder="Email" class="f-s-17 b-n outline-none p-10-15 w-p-100" name="email">
                     </div>
-                    <input name='token' id='token' value='0e94d9e547e25558555a30d853556f59' type= 'hidden'>                    <div class="b-one p-5-15 m-10-0 display-flex" style="align-items: center;">
-                        <input type="password" style="flex: 1;" id="password" placeholder="Password" class="f-s-17 b-n pass outline-none p-10-15 w-p-100">
+                    <div class="b-one p-5-15 m-10-0 display-flex" style="align-items: center;">
+                        <input type="password" style="flex: 1;" id="password" name="password" placeholder="Password" class="f-s-17 b-n pass outline-none p-10-15 w-p-100">
                         <img id="passwordimg"  onclick="tooglepassword()" class="w-25 m-r-10" style="filter:blur(1px); cursor: pointer;" src="http://johnwaithira.github.io/kicks_files/svgs/eye-solid.svg">
                     </div>
                     <div class="btn p-t-30">
