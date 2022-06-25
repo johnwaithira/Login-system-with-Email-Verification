@@ -77,4 +77,11 @@ class App
     {
         var_dump($_SESSION);
     }
+
+    public static function session()
+    {
+        var_dump($_SESSION);
+    }
+
+
 }
