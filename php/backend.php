@@ -1,9 +1,8 @@
 <?php
-namespace Waithira\Phpemailverification\php;
-use Waithira\Phpemailverification\php\Database;
+require_once "./db.php";
 class Backend
 {
-    public Database $database;
+    
     public function __construct()
     {
         $this->database =new Database();
