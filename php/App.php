@@ -24,7 +24,19 @@ class App
 
     public static function create($params = [])
     {
-        
+        foreach($params as $key => $val)
+        {
+            $$key = htmlspecialchars($val);
+        }      
+
+        if(self::check($params['email']))
+        {
+            echo "a";
+        }
+        else
+        {
+            echo "b";
+        }
     }
 }
 
