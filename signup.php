@@ -8,7 +8,7 @@
     $errors = array();
     
     $app = new App();
-    var_dump($db::check('waithira@jon.com'));
+    var_dump($app::check('waithira@jon.com'));
 
 
     if(isset($_POST['create']))
