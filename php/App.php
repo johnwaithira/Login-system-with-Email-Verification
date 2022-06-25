@@ -31,7 +31,14 @@ class App
 
         if(self::check($params['email']))
         {
-            $username = strtolower(str_replace(' ', '', ($params['firstname'].$params['firstname'])));
+            $user_id = bin2hex(random_bytes(4));
+            $username = strtolower(
+                str_replace(
+                    ' ', 
+                    '', 
+                    ($params['firstname'].$params['firstname']
+                )
+            ));
             $create = self::$db->conn->prepare("INSERT INTO users (user_id, username, firstname, secondname, email, password) 
             VALUES (?, ?, ?, ?, ?, ?)
             ");
@@ -42,4 +49,3 @@ class App
         }
     }
 }
-
