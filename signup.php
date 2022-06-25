@@ -2,12 +2,12 @@
 
 
 
-    require_once __DIR__."/php/db.php";
+    require_once __DIR__."/php/App.php";
 
     #id	user_id	username	firstname	secondname	email	password	created_at
     $errors = array();
     
-    $db = new Database();
+    $db = new App();
 
 
     if(isset($_POST['create']))
