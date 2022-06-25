@@ -4,9 +4,9 @@ use Waithira\Phpemailverification\php\Database;
 class Backend
 {
     public Database $database;
-    public function __construct(Database $database)
+    public function __construct()
     {
-        $this->database = $database;
+        $this->database =new Database();
     }
     public static function check()
     {
