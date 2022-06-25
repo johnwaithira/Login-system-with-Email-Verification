@@ -12,13 +12,13 @@ class Database
     {
         try
         {
-            $this->conn = new PDO($this->dsn, $this->user, $this->pass);
-            $this->conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-            $this->conn->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_ASSOC);
+            $this->conn = new \PDO($this->dsn, $this->user, $this->pass);
+            $this->conn->setAttribute(\PDO::ATTR_ERRMODE, \PDO::ERRMODE_EXCEPTION);
+            $this->conn->setAttribute(\PDO::ATTR_DEFAULT_FETCH_MODE, \PDO::FETCH_ASSOC);
             echo "Connected";
 
         }
-        catch(Exception $e)
+        catch(\Exception $e)
         {
             echo "<pre>";
             var_dump($e);
