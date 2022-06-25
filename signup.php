@@ -7,14 +7,14 @@
     #id	user_id	username	firstname	secondname	email	password	created_at
     $errors = array();
     
-    $db = new App();
+    $app = new App();
     var_dump($db::check('waithira@jon.com'));
 
 
     if(isset($_POST['create']))
     {
        
-      $db::create($_POST);
+      $app::create($_POST);
         
     }
 ?>
