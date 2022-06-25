@@ -90,6 +90,7 @@ class App
            if($cred['password'] == $params['password'])
            {
                 $_SESSION['loggedin'] = $cred['username'];
+                $_SESSION['user'] = $cred['user_id'];
                 header('Location: ./index.php');
            }
            else
