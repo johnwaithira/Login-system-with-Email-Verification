@@ -7,8 +7,7 @@
     if(isset($_POST['create']))
     {
        
-      $app::create($_POST);
-      echo $error;
+      $app::login($_POST);
         
     }
 ?>
