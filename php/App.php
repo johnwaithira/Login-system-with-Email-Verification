@@ -80,7 +80,10 @@ class App
 
     public static function session()
     {
-        var_dump($_SESSION);
+        if(!isset($_SESSION['loggedin']))
+        {
+            header('Location: ./login.php');
+        }
     }
 
 
