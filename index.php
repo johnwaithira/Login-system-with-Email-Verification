@@ -14,10 +14,31 @@ $app::session();
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-</head>
-<body>
-    <a href="./logout.php">Logout</a>
+    <link rel="stylesheet" href="http://127.0.0.1/shoetailor/ke/css/style.css">
 
-    <h1>Welcome <?php $app::user()?></h1>
+</head>
+<body> 
+    <div class="p-t-50">
+        <div class="b_x w-p-40 m-a">
+            <div class="box-shadow">
+                <div class="p-10-20">
+                    <h3>Welcome <i style="color:green !important;"> @<?php $app::user()?></i></h3>
+                    <div class="details">
+                        <div class="p-10-0">
+                            <hr>
+                            <p class="p-5-0"><strong>Name  &nbsp; :</strong></p>
+                            <p class="p-5-0"><strong>Email  &nbsp;  :</strong></p>
+                            <p class="p-5-0"><strong>Status  &nbsp;:</strong></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="btns p-t-20">
+                <button class="p-5-15 b-one bg-inherit">
+                    <a href="./logout.php">Logout</a>
+                </button>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
