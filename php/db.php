@@ -1,6 +1,4 @@
 <?php
-namespace Waithira\Phpemailverification\php;
-
 class Database
 {
     public $dsn = "mysql:host=localhost; dbname=phploginsystem";

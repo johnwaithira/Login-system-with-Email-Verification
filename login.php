@@ -2,7 +2,6 @@
 <?php
     require_once __DIR__."/php/db.php";
 
-    $db = new Database();
 ?>
 <!DOCTYPE html>
 <html lang="en">
