@@ -19,10 +19,18 @@ class App
        }
        else
        {
-        return $statement->fetch();
+        return false;
        }
     }
     
+    public static function user_data($email)
+    {
+        $statement = self::$db->conn->prepare("SELECT * FROM users where email = ?");
+        $statement->execute([$email]);
+
+        return $statement->fetch();
+    }
+
     public static function create($params = [])
     {
         foreach($params as $key => $val)
@@ -75,10 +83,13 @@ class App
 
     public static function login($params = [])
     {
-       if(self::check($params['email']) == true)
+       if(!self::check($params['email']))
        {
-            $statement = self::check($params['email']);
-            var_dump($statement);
+           var_dump(self::user_data($params['email']));
+       }
+       else
+       {
+        echo 0;
        }
        
     }
