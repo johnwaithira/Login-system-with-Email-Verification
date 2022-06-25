@@ -86,5 +86,9 @@ class App
         }
     }
 
+    public static function user()
+    {
+        echo $_SESSION['loggedin'];
+    }
 
 }
