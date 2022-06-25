@@ -1,6 +1,5 @@
 <?php
-    require_once __DIR__."/php/db.php";
-    require_once __DIR__."/php/backend.php";
+    require_once __DIR__."/vendor/autoload.php";
 
     #id	user_id	username	firstname	secondname	email	password	created_at
     $errors = array();
@@ -12,10 +11,7 @@
        foreach($_POST as $key => $val)
        {
            $$key = htmlspecialchars($val);
-       }
-       check($db, $email, $email);
-
-        
+       }        
         
     }
 ?>
