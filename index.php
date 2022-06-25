@@ -26,9 +26,9 @@ $app::session();
                     <div class="details">
                         <div class="p-10-0">
                             <hr>
-                            <p class="p-5-0"><strong>Name  &nbsp; :</strong></p>
-                            <p class="p-5-0"><strong>Email  &nbsp;  :</strong></p>
-                            <p class="p-5-0"><strong>Status  &nbsp;:</strong></p>
+                             <?php 
+                                $app::details();
+                             ?>
                         </div>
                     </div>
                 </div>
