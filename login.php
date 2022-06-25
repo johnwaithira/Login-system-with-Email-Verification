@@ -2,6 +2,15 @@
 <?php
     require_once __DIR__."/php/db.php";
 
+    $app = new App();
+
+    if(isset($_POST['create']))
+    {
+       
+      $app::create($_POST);
+      echo $error;
+        
+    }
 ?>
 <!DOCTYPE html>
 <html lang="en">
