@@ -1,5 +1,6 @@
 <?php
     require_once __DIR__."/php/db.php";
+    require_once __DIR__."/php/backend.php";
 
     #id	user_id	username	firstname	secondname	email	password	created_at
     $errors = array();
@@ -7,10 +8,12 @@
 
     if(isset($_POST['create']))
     {
+       $db = new Database();
        foreach($_POST as $key => $val)
        {
            $$key = htmlspecialchars($val);
        }
+       check($db, $email, $email);
 
         
         
