@@ -1,4 +1,5 @@
 <?php
+namespace Waithira\Phpemailverification\php;
 
 class Database
 {
