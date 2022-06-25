@@ -1,0 +1,15 @@
+{
+    "name": "waithira/phpemailverification",
+    "autoload": {
+        "psr-4": {
+            "Waithira\\Phpemailverification\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "johnwaithira",
+            "email": "waithirajon@gmail.com"
+        }
+    ],
+    "require": {}
+}
