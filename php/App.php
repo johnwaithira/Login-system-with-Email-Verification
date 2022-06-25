@@ -45,6 +45,24 @@ class App
                     ) 
             VALUES (?, ?, ?, ?, ?, ?)
             ");
+
+            if($create->execute(
+                [
+                    $user_id,
+                    $username,
+                    $params['firstname'],
+                    $params['lastname'],
+                    $params['email'],
+                    $params['password']
+
+                    ]
+                )
+            ){
+                echo true;
+            }else
+            {
+                echo "Acc not Created";
+            }
         }
         else
         {
