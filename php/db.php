@@ -5,7 +5,7 @@ class Database
     public $user = "root";
     public $pass = "1234";
 
-    private $conn = null;
+    public $conn = null;
     public function __construct()
     {
         try
