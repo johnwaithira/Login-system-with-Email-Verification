@@ -105,6 +105,11 @@ class App
        
     }
 
+    public static function details()
+    {
+        var_dump($_SESSION['loggedin']);
+    }
+
     public static function session()
     {
         if(!isset($_SESSION['loggedin']))
