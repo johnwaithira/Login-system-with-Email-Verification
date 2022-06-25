@@ -21,7 +21,7 @@ class App
         return false;
        }
     }
-
+    // user_id	username	firstname	secondname	email	password	created_at
     public static function create($params = [])
     {
         foreach($params as $key => $val)
@@ -31,8 +31,9 @@ class App
 
         if(self::check($params['email']))
         {
-            $create = self::$db->conn->prepare("INSERT INTO users () 
-            VALUES ()
+            $username = strtolower(str_replace(' ', '', ($params['firstname'].$params['firstname'])));
+            $create = self::$db->conn->prepare("INSERT INTO users (user_id, username, firstname, secondname, email, password) 
+            VALUES (?, ?, ?, ?, ?, ?)
             ");
         }
         else
