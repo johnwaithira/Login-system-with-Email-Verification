@@ -86,12 +86,11 @@ class App
        if(!self::check($params['email']))
        {
             $cred = self::user_data($params['email']);
-            // echo "<pre>";
-            // var_dump($cred);
-            // echo "</pre>";
+            
            if($cred['password'] == $params['password'])
            {
-                echo "Logged in successfully";
+                $_SESSION['loggedin'] = $cred;
+                header('Location: ./index.php');
            }
            else
            {
@@ -120,6 +119,12 @@ class App
         {
             echo $_SESSION['loggedin'];
         }
+    }
+
+    public static function logout()
+    {
+        session_destroy();
+        header('Location: ./login.php');
     }
 
 }
