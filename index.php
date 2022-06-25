@@ -16,6 +16,6 @@ $app::session();
     <title>Document</title>
 </head>
 <body>
-    
+    <a href="./logout.php">Logout</a>
 </body>
 </html>

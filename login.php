@@ -34,7 +34,7 @@
                     </div>
                     <div class="b-one p-5-15 m-10-0 display-flex" style="align-items: center;">
                         <input type="password" style="flex: 1;" name="password" placeholder="Password" class="f-s-17 b-n pass outline-none p-10-15 w-p-100">
-                        <img id="passwordimg"  onclick="tooglepassword()" class="w-25 m-r-10" style="filter:blur(1px); cursor: pointer;" src="https://johnwaithira.github.io/kicks_files/svgs/eye-solid.svg">
+                        <img id="passwordimg"  onclick="tooglepassword()" class="w-25 m-r-10" style="filter:blur(1px); cursor: pointer;" src="http://127.0.0.1/shoetailor/kicks_files/svgs/eye-solid.svg">
                     </div>
                     <div class="btn p-t-30">
                         <button id="btnlogin" type="submit" name="login" class="p-15-25 b-one bg-inherit">Login</button>
