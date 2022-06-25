@@ -39,7 +39,10 @@ class App
                     ($params['firstname'].$params['firstname']
                 )
             ));
-            $create = self::$db->conn->prepare("INSERT INTO users (user_id, username, firstname, secondname, email, password) 
+            $create = self::$db->conn->prepare(
+                "INSERT INTO users (
+                    user_id, username, firstname, secondname, email, password
+                    ) 
             VALUES (?, ?, ?, ?, ?, ?)
             ");
         }
