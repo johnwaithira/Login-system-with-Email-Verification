@@ -14,11 +14,11 @@ class App
 
        if($statement->rowCount() < 1)
        {
-            
+         return true;
        }
        else
        {
-        echo "Email already taken";
+        return false;
        }
     }
 }
