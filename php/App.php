@@ -73,9 +73,9 @@ class App
         }
     }
 
-    public static function login()
+    public static function login($params = [])
     {
-        var_dump($_SESSION);
+        
     }
 
     public static function session()
@@ -88,7 +88,10 @@ class App
 
     public static function user()
     {
-        echo $_SESSION['loggedin'];
+        if(isset($_SESSION['loggedin']))
+        {
+            echo $_SESSION['loggedin'];
+        }
     }
 
 }
