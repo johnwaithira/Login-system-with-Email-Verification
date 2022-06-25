@@ -21,5 +21,10 @@ class App
         return false;
        }
     }
+
+    public static function create($params = [])
+    {
+        
+    }
 }
 
