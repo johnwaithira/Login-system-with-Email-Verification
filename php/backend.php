@@ -10,6 +10,6 @@ class Backend
     }
     public static function check()
     {
-        var_dump($this->database);
+        var_dump(self::$database);
     }
 }
