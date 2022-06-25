@@ -8,8 +8,8 @@ class Backend
     {
         $this->database =new Database();
     }
-    public static function check()
+    public function check()
     {
-        var_dump(self::$database);
+        var_dump($this->database);
     }
 }
