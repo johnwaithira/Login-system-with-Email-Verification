@@ -85,8 +85,20 @@ class App
     {
        if(!self::check($params['email']))
        {
-           var_dump(self::user_data($params['email']));
-       }
+            $cred = self::user_data($params['email']);
+            // echo "<pre>";
+            // var_dump($cred);
+            // echo "</pre>";
+           if($cred['password'] == $params['password'])
+           {
+                echo "Logged in successfully";
+           }
+           else
+           {
+            echo "Wrong password";
+           }
+
+        }
        else
        {
         echo 0;
