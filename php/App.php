@@ -1,5 +1,6 @@
 <?php
 require_once __DIR__."/db.php";
+session_start();
 class App
 {
     public static Database $db;
@@ -21,7 +22,7 @@ class App
         return false;
        }
     }
-    // user_id	username	firstname	secondname	email	password	created_at
+    
     public static function create($params = [])
     {
         foreach($params as $key => $val)
@@ -36,7 +37,7 @@ class App
                 str_replace(
                     ' ', 
                     '', 
-                    ($params['firstname'].$params['firstname']
+                    ($params['firstname'].$params['lastname']
                 )
             ));
             $create = self::$db->conn->prepare(
@@ -57,16 +58,23 @@ class App
 
                     ]
                 )
-            ){
+            )
+            {
                 echo true;
-            }else
+            }
+            else
             {
                 echo "Acc not Created";
             }
         }
         else
         {
-            echo "b";
+            echo "Email already taken";
         }
+    }
+
+    public static function login()
+    {
+        var_dump($_SESSION);
     }
 }
