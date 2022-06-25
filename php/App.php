@@ -19,7 +19,7 @@ class App
        }
        else
        {
-        return false;
+        return $statement->fetch();
        }
     }
     
@@ -75,8 +75,12 @@ class App
 
     public static function login($params = [])
     {
-        var_dump(self::check($params['email']));
-
+       if(self::check($params['email']) == true)
+       {
+            $statement = self::check($params['email']);
+            var_dump($statement);
+       }
+       
     }
 
     public static function session()

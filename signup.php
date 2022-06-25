@@ -61,7 +61,7 @@
                     <div class="prompts p-10-5">
                         <div class="forgot-password p-20-0"></div><hr>
                         <div class="create-account p-10-0">
-                            <p>Already have an account ?<a href="/login.php" class="a" style="color: blue !important;"> Login</a></p>
+                            <p>Already have an account ?<a href="./login.php" class="a" style="color: blue !important;"> Login</a></p>
                         </div>
                     </div>
                 </form>
