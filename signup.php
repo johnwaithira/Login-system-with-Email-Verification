@@ -7,7 +7,12 @@
 
     if(isset($_POST['create']))
     {
-       foreach($_POST as $key)
+       foreach($_POST as $key => $val)
+       {
+           $$key = htmlspecialchars($val);
+       }
+
+        
         
     }
 ?>
