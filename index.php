@@ -17,5 +17,7 @@ $app::session();
 </head>
 <body>
     <a href="./logout.php">Logout</a>
+
+    <h1>Welcome <?php $app::user()?></h1>
 </body>
 </html>
