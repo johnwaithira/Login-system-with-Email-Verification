@@ -2,14 +2,12 @@
 
 
 
-    require_once __DIR__."/vendor/autoload.php";
-    use Waithira\Phpemailverification\php\Backend;
-    use Waithira\Phpemailverification\php\Database;
+    require_once __DIR__."/php/db.php";
 
     #id	user_id	username	firstname	secondname	email	password	created_at
     $errors = array();
     
-    $bd = new Database();
+    $db = new Database();
 
 
     if(isset($_POST['create']))
