@@ -1,8 +1,9 @@
 {
     "name": "waithira/phpemailverification",
+    "desxription": "PHP Login system with email verification",
     "autoload": {
         "psr-4": {
-            "Waithira\\Phpemailverification\\": "src/"
+            "Waithira\\Phpemailverification\\": "./"
         }
     },
     "authors": [
