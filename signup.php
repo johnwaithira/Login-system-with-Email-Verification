@@ -14,10 +14,7 @@
     if(isset($_POST['create']))
     {
        
-       foreach($_POST as $key => $val)
-       {
-           $$key = htmlspecialchars($val);
-       }        
+      $db::create($_POST);
         
     }
 ?>
