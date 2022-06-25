@@ -11,7 +11,7 @@ class App
     public static function check($email)
     {
        $statement = self::$db->conn->prepare("SELECT * FROM users where email = ?");
-        $statement->execute([$email]);
+       $statement->execute([$email]);
 
        if($statement->rowCount() < 1)
        {
@@ -19,7 +19,7 @@ class App
        }
        else
        {
-        return false;
+        return $statement->fetch();
        }
     }
     
@@ -75,7 +75,10 @@ class App
 
     public static function login($params = [])
     {
-        
+        if(!self::check($params['email']))
+        {
+            var_dump(self::check($params['email']));
+        }
     }
 
     public static function session()
