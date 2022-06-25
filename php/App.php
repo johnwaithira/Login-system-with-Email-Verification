@@ -107,7 +107,7 @@ class App
 
     public static function details()
     {
-        var_dump($_SESSION['loggedin']);
+        var_dump($_SESSION['user']);
     }
 
     public static function session()
