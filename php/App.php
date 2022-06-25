@@ -31,7 +31,9 @@ class App
 
         if(self::check($params['email']))
         {
-            echo "a";
+            $create = self::$db->conn->prepare("INSERT INTO users () 
+            VALUES ()
+            ");
         }
         else
         {
