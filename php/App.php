@@ -122,7 +122,7 @@ class App
         $details = '
            <div class="p-t-20">
                 <p class="p-5-0"><strong>Email</strong> '. $data['email'] .'</p>
-                <p class="p-5-0"><strong>Status</strong> '. $data[''] .'</p>
+                <p class="p-5-0"><strong>Status</strong> '. $status .'</p>
                 <p class="p-5-0"><strong>Create at</strong> '. $data[''] .'</p>
            </div>
         ';
