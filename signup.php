@@ -4,6 +4,9 @@
 
     require_once "./php/App.php";
 
+    echo $_SERVER['HTTP_REFERER'];
+  ;
+
 
     $errors = array();
     
