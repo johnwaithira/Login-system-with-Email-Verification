@@ -18,7 +18,8 @@ class Mailer
             $mail->isSMTP();
             $mail->Host =  "smtp.office365.com"; # in my case am using microsoft account
             $mail->SMTPAuth = true;
-            $mail->Username = "some_coder_ke@outlook.com";
+            $mail->Username = "[ENTER EMAIL]";
+            $mail->Password = "[ENTER YOUR PASSWORD]";
         }
         catch(Exception $e)
         {
