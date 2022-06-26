@@ -12,7 +12,7 @@ class Mailer
     public static function email($params = [])
     {
         $mail = new PHPMailer(true);
-
+        $subject = "OTP Verification code";
         $body = 'Hello '. $params['username'].',<br>'.
                 'Your otp code is' . $params['otp'];
 
