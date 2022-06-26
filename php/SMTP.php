@@ -24,7 +24,7 @@ class Mailer
             $mail->Port = 587; # this differs depending on the service provider
             $mail->setFrom('[EMAIL]', '[NAME]');
             $mail ->addAddress($params['email']);
-                $mail ->addReplyTo( $_ENV['ReplyTo'],  $_ENV['ReplyTo_User']); 
+            $mail ->addReplyTo('[EMAIL]', '[NAME]'); 
 
         }
         catch(Exception $e)
