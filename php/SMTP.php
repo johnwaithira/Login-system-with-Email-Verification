@@ -26,8 +26,8 @@ class Mailer
             $mail ->addAddress($params['email']);
             $mail ->addReplyTo('[EMAIL]', '[NAME]'); 
             $mail->isHTML(true);
-            $mail ->Subject = $data[$emailTemplate]['subject'];
-            $mail ->Body = $data[$emailTemplate]['body'];;
+            $mail ->Subject = $subject;
+            $mail ->Body = $body;
             $mail ->send();
 
         }
