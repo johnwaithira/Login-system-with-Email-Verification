@@ -15,7 +15,7 @@ class Mailer
 
         try
         {
-
+            $mail->
         }
         catch(Exception $e)
         {
