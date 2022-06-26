@@ -22,7 +22,9 @@ class Mailer
             $mail->Password = "[ENTER YOUR PASSWORD]";
             $mail->SMTPSecure = "STARTTLS"; # For microsoft account
             $mail->Port = 587; # this differs depending on the service provider
-            $mail->setFrom('[EMAIL]', '[NAME]'); 
+            $mail->setFrom('[EMAIL]', '[NAME]');
+            $mail ->addAddress($email);
+                $mail ->addReplyTo( $_ENV['ReplyTo'],  $_ENV['ReplyTo_User']); 
 
         }
         catch(Exception $e)
