@@ -20,7 +20,7 @@ class Mailer
             $mail->SMTPAuth = true;
             $mail->Username = "[ENTER EMAIL]";
             $mail->Password = "[ENTER YOUR PASSWORD]";
-            $mail->SMTPSecure = ;
+            $mail->SMTPSecure = "STARTTLS";
         }
         catch(Exception $e)
         {
