@@ -108,7 +108,8 @@ class App
 
     public static function details()
     {
-        var_dump($_SESSION['user']);
+        $statement = self::$db->conn->prepare("SELECT * FROM users where user_id = ?");
+        $statement->execute([$_SESSION['user']]);
     }
 
     public static function session()
