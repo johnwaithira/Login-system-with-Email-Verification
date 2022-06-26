@@ -5,6 +5,8 @@ require_once "./php/App.php";
 $app = new App();
 $app::session();
 
+$app::header();
+
 ?>
 
     <title>PHP login system</title>
