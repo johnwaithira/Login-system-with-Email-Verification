@@ -13,7 +13,8 @@ class Mailer
     {
         $mail = new PHPMailer(true);
 
-        $body = 'Hello '. $params['username'].;
+        $body = 'Hello '. $params['username'].',<br>'.
+                '';
 
         try
         {
