@@ -4,10 +4,12 @@
 
     require_once "./php/App.php";
 
-    #id	user_id	username	firstname	secondname	email	password	created_at
+
     $errors = array();
     
     $app = new App();
+
+
 
     if(isset($_POST['create']))
     {

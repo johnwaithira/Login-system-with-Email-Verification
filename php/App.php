@@ -1,12 +1,47 @@
 <?php
 require_once __DIR__."/db.php";
+require_once __DIR__."/SMTP.php";
 session_start();
 class App
 {
     public static Database $db;
+    public static Mailer $mailer;
+
     public function __construct()
     {
         self::$db = new Database();
+    }
+
+    public static function otp($params =[])
+    {
+
+        $query = self::$db->conn->prepare("SELECT * FROM userotp where user_id = ?");
+        $query->execute([$params['user_id']]);
+
+        $otp = rand(100000, 999999);
+
+        if($query->rowCount() < 1)
+        {
+            $statement = self::$db->conn->prepare(
+            "INSERT INTO userotp (user_id, otp)
+             VALUES (?, ?)");
+             $statement->execute([$params['user_id'], $otp]);
+        }
+        else
+        {
+            $statement = self::$db->conn->prepare(
+                "UPDATE userotp set otp = ? where user_id = ?"
+            );
+            $statement->execute([$params['user_id'], $otp]);
+        }
+        $data = 
+        [
+            'otp' => $otp,
+            'username' => $params['username'], 
+            'email' => $params['email'] 
+        ];
+       
+        var_dump($data);
     }
     public static function check($email)
     {
@@ -33,6 +68,7 @@ class App
 
     public static function create($params = [])
     {
+       
         foreach($params as $key => $val)
         {
             $$key = htmlspecialchars($val);
@@ -55,6 +91,7 @@ class App
             VALUES (?, ?, ?, ?, ?, ?)
             ");
 
+           
             if($create->execute(
                 [
                     $user_id,
@@ -68,7 +105,13 @@ class App
                 )
             )
             {
-                echo true;
+                $data = [
+                    'username' => $username,
+                    'user_id' => $user_id,
+                    'email' => $params['email']
+                ];
+               self::otp($data);
+               echo true;
             }
             else
             {
@@ -135,6 +178,8 @@ class App
             header('Location: ./login.php');
         }
     }
+
+   
 
     public static function user()
     {

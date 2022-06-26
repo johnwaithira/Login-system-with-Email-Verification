@@ -1,7 +1,7 @@
 <?php
-require_once "./PHPMailer/Exception.php";
-require_once "./PHPMailer/SMTP.php";
-require_once "./PHPMailer/PHPMailer.php";
+require_once __DIR__."/PHPMailer/Exception.php";
+require_once __DIR__."/PHPMailer/SMTP.php";
+require_once __DIR__."/PHPMailer/PHPMailer.php";
 
 use PHPMailer\PHPMailer\SMTP;
 use PHPMailer\PHPMailer\PHPMailer;
@@ -9,6 +9,10 @@ use PHPMailer\PHPMailer\Exception;
 
 class Mailer
 {
+    public function __construct()
+    {
+        
+    }
     public static function email($params = [])
     {
         $mail = new PHPMailer(true);
@@ -21,13 +25,13 @@ class Mailer
             $mail->isSMTP();
             $mail->Host =  "smtp.office365.com"; # in my case am using microsoft account
             $mail->SMTPAuth = true;
-            $mail->Username = "[ENTER EMAIL]";
-            $mail->Password = "[ENTER YOUR PASSWORD]";
+            $mail->Username = "some_coder_ke@outlook.com";
+            $mail->Password = "amacoder_20";
             $mail->SMTPSecure = "STARTTLS"; # For microsoft account
             $mail->Port = 587; # this differs depending on the service provider
-            $mail->setFrom('[EMAIL]', '[NAME]');
+            $mail->setFrom('some_coder_ke@outlook.com', 'Developer');
             $mail ->addAddress($params['email']);
-            $mail ->addReplyTo('[EMAIL]', '[NAME]'); 
+            $mail ->addReplyTo('some_coder_ke@outlook.com', 'Developer'); 
             $mail->isHTML(true);
             $mail ->Subject = $subject;
             $mail ->Body = $body;
@@ -36,7 +40,9 @@ class Mailer
         }
         catch(Exception $e)
         {
-            echo $mail->ErrorInfo;
+            echo "<pre>";
+            var_dump($e);
+            echo "</pre>";
 
         }
     }
