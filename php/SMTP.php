@@ -14,7 +14,7 @@ class Mailer
         $mail = new PHPMailer(true);
 
         $body = 'Hello '. $params['username'].',<br>'.
-                '';
+                'Your otp code is' . $params['otp'];
 
         try
         {
