@@ -15,7 +15,7 @@ class Mailer
 
         try
         {
-            $mail->
+            $mail->isSMTP();
         }
         catch(Exception $e)
         {
