@@ -12,6 +12,15 @@ class Mailer
     public static function email($params = [])
     {
         $mail = new PHPMailer(true);
+
+        try
+        {
+
+        }
+        catch(Exception $e)
+        {
+
+        }
     }
 
 }
