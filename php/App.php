@@ -109,12 +109,12 @@ class App
     public static function details()
     {
         $statement = self::$db->conn->prepare("SELECT * FROM users where user_id = ?");
-        $data = $statement->execute([$_SESSION['user']]);
-
+        $statement->execute([$_SESSION['user']]);
+        $data = $statement->fetch();
 
         foreach($data as $key => $val)
         {
-            
+            echo $key;
         }
     }
 
