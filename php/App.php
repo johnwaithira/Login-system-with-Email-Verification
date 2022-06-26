@@ -177,7 +177,7 @@ class App
             $status = "not verified";
         }
         else{
-            $status = "not verified";
+            $status = "not verified .<a href='./verify.php?'>Verify</a>";
         }
         $details = '
            <div class="p-t-20">
