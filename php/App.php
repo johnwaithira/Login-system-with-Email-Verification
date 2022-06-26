@@ -41,7 +41,7 @@ class App
             'email' => $params['email'] 
         ];
        
-        var_dump($data);
+        Mailer::email($data);
     }
     public static function check($email)
     {
