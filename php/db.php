@@ -19,7 +19,7 @@ class Database
         catch(\Exception $e)
         {
             echo "<pre>";
-            var_dump($e);
+            var_dump($e); #Connection failure
             echo "</pre>";
 
         }
