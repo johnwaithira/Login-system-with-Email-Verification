@@ -21,7 +21,10 @@ class Mailer
         $mail = new PHPMailer(true);
         $subject = "OTP Verification code";
         $body = 'Hello '. $params['username'].',<br>'.
-                'Your otp code is ' . $params['otp'];
+                'Your otp code is ' . $params['otp'].
+                '<br> <a href="'.$link.'"> Verify</a>'
+                ;
+
 
         try
         {
