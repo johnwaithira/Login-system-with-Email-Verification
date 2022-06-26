@@ -21,6 +21,8 @@
       echo $error;
         
     }
+
+    $app::header();
 ?>
 
    <title>Create Account </title>
