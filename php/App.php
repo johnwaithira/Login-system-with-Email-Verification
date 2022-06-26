@@ -110,6 +110,7 @@ class App
     {
         $statement = self::$db->conn->prepare("SELECT * FROM users where user_id = ?");
         $statement->execute([$_SESSION['user']]);
+        var_dump($statement->fetch());
     }
 
     public static function session()
