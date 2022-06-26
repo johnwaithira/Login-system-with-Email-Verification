@@ -34,7 +34,7 @@ $app::session();
                 </div>
             </div>
             <div class="btns p-t-20">
-                <button class="p-5-15 b-one bg-inherit">
+                <a href=""><button class="p-5-15 b-one bg-inherit">
                     <a href="./logout.php">Logout</a>
                 </button>
             </div>
