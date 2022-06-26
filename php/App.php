@@ -112,12 +112,18 @@ class App
         $statement->execute([$_SESSION['user']]);
         $data = $statement->fetch();
 
-      
+        if($data['verified'] == 0)
+        {
+            $status = "not verified";
+        }
+        else{
+            $status = "not verified";
+        }
         $details = '
            <div class="p-t-20">
                 <p class="p-5-0"><strong>Email</strong> '. $data['email'] .'</p>
                 <p class="p-5-0"><strong>Status</strong> '. $data[''] .'</p>
-                <p class="p-5-0"><strong>Create at</strong> '. $data .'</p>
+                <p class="p-5-0"><strong>Create at</strong> '. $data[''] .'</p>
            </div>
         ';
         echo $details;
