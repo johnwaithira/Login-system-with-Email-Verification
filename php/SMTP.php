@@ -13,6 +13,8 @@ class Mailer
     {
         $mail = new PHPMailer(true);
 
+        $body = 'Hello '. $params[''];
+
         try
         {
             $mail->isSMTP();
