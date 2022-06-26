@@ -16,7 +16,7 @@ class Mailer
     public static function email($params = [])
     {
         
-        $link = "http://localhost:3000/verify.php?userid=?".$params['user_id']."&otp=". $params['otp'];
+        $link = "http://localhost:3000/verify.php?email=?".$params['email']."&otp=". $params['otp'];
         
         $mail = new PHPMailer(true);
         $subject = "OTP Verification code";

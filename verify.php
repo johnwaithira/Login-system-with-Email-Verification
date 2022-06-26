@@ -35,7 +35,12 @@
                             <button id="btnlogin" type="submit" name="resend" class="p-15-25 b-one bg-inherit">Resend</button>
                     </div>
                     </div>
-                   
+                    <div class="prompts p-10-5">
+                        <div class="forgot-password p-20-0"></div><hr>
+                        <div class="create-account p-10-0">
+                            <p>Verify later ?<a href="./login.php" class="a" style="color: blue !important;"> Login</a></p>
+                        </div>
+                    </div>
                 </form>
             </div>
         </div>
