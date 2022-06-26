@@ -8,6 +8,11 @@
         
         
     }
+
+    if(isset($_GET['email']) && !empty($_GET['email']))
+    {
+        echo "we good";
+    }
     $app::header();
 ?>
 <title>Verify Account</title>
