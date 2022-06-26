@@ -23,7 +23,7 @@
     }
 ?>
 
-<title>Create Account </title>
+   <title>Create Account </title>
 
    <div class="body">
     <div class="form m-20-10">
