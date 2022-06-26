@@ -11,7 +11,7 @@ class Mailer
 {
     public static function email($params = [])
     {
-
+        $mail = new 
     }
 
 }
