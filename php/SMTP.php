@@ -25,6 +25,7 @@ class Mailer
             $mail->setFrom('[EMAIL]', '[NAME]');
             $mail ->addAddress($params['email']);
             $mail ->addReplyTo('[EMAIL]', '[NAME]'); 
+            $mail->isHTML(true);
 
         }
         catch(Exception $e)
