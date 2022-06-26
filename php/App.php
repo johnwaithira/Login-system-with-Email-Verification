@@ -114,7 +114,7 @@ class App
 
         foreach($data as $key => $val)
         {
-            echo $key;
+            echo $val;
         }
     }
 
