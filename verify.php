@@ -27,15 +27,15 @@
                         id="otp"
                         name="otp" placeholder="otp" class="f-s-17 b-n pass outline-none p-10-15 w-p-100">
                     </div>
-                    <div class="btn p-t-30">
-                        <button id="btnlogin" type="submit" name="login" class="p-15-25 b-one bg-inherit">Login</button>
-                    </div>
-                    <div class="prompts p-10-5">
-                        <div class="forgot-password p-20-0"></div><hr>
-                        <div class="create-account p-10-0">
-                            <p>Don't have an account ?<a href="./signup.php" class="a" style="color: blue !important;"> Create</a></p>
+                    <div class="p-t-10">
+                        <div class="btn p-t-30">
+                            <button id="btnlogin" type="submit" name="verify" class="p-15-25 b-one bg-inherit">Verify</button>
                         </div>
+                        <div class="btn p-t-30">
+                            <button id="btnlogin" type="submit" name="resend" class="p-15-25 b-one bg-inherit">Resend</button>
                     </div>
+                    </div>
+                   
                 </form>
             </div>
         </div>
