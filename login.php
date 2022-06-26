@@ -10,6 +10,8 @@
       $app::login($_POST);
         
     }
+
+    $app::header();
 ?>
   <title>Login</title>
    <div class="body">
