@@ -114,7 +114,11 @@ class App
 
         foreach($data as $key => $val)
         {
-            echo $val;
+            $details = '
+                <p><strong>Email</strong></p>
+                <p><strong>Status</strong></p>
+                <p><strong>Create at</strong></p>
+            ';
         }
     }
 
