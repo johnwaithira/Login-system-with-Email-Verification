@@ -112,14 +112,15 @@ class App
         $statement->execute([$_SESSION['user']]);
         $data = $statement->fetch();
 
-        foreach($data as $key => $val)
-        {
-            $details = '
-                <p><strong>Email</strong></p>
-                <p><strong>Status</strong></p>
-                <p><strong>Create at</strong></p>
-            ';
-        }
+      
+        $details = '
+           <div class="p-t-20">
+                <p class="p-5-0"><strong>Email</strong></p>
+                <p class="p-5-0"><strong>Status</strong></p>
+                <p class="p-5-0"><strong>Create at</strong></p>
+           </div>
+        ';
+        echo $details;
     }
 
     public static function session()
