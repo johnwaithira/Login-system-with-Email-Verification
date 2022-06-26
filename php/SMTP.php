@@ -17,6 +17,7 @@ class Mailer
         {
             $mail->isSMTP();
             $mail->Host =  "smtp.office365.com"; # in my case am using microsoft account
+            $mail->SMTPAuth = true;
         }
         catch(Exception $e)
         {
