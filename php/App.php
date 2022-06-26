@@ -34,14 +34,16 @@ class App
             );
             $statement->execute([$params['user_id'], $otp]);
         }
-        $data = 
-        [
+        $data = [
             'otp' => $otp,
             'username' => $params['username'], 
             'email' => $params['email'] 
         ];
        
-        Mailer::email($data);
+        if(Mailer::email($data))
+        {
+            header('Location: ./login.php');
+        }
     }
     public static function check($email)
     {
