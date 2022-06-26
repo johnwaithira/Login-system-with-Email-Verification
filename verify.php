@@ -17,7 +17,7 @@
             <div class="p-20 box-shadow1">
                 <form id="loginform" method="post" class=" p-10 m-t-20">
                     <div class="form-head p-20-0">
-                        <h1 class="color_fade">Login</h1>
+                        <h1 class="color_fade">Verify Account</h1>
                     </div>
                     <div class="b-one p-5-15 m-10-0 ">
                         <input type="text" name="email" placeholder="Email" class="f-s-17 b-n outline-none p-10-15 w-p-100">
