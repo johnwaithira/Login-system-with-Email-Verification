@@ -12,6 +12,13 @@ class App
         self::$db = new Database();
     }
 
+    public static function header()
+    {
+        echo '
+        
+        ';
+    }
+
     public static function otp($params =[])
     {
 
