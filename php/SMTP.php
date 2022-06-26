@@ -19,6 +19,7 @@ class Mailer
         }
         catch(Exception $e)
         {
+            echo $mail->ErrorInfo;
 
         }
     }
