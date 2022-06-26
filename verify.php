@@ -27,8 +27,8 @@
                         id="otp"
                         name="otp" placeholder="otp" class="f-s-17 b-n pass outline-none p-10-15 w-p-100">
                     </div>
-                    <div class="p-t-10">
-                        <div class="btn p-t-30">
+                    <div class="p-t-10 " style="display:flex;">
+                        <div class="btn p-t-30 m-r-5">
                             <button id="btnlogin" type="submit" name="verify" class="p-15-25 b-one bg-inherit">Verify</button>
                         </div>
                         <div class="btn p-t-30">
