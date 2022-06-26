@@ -2,8 +2,8 @@
 class Database
 {
     public $dsn = "mysql:host=localhost; dbname=phploginsystem";
-    public $user = "root";
-    public $pass = "1234";
+    public $user = "root"; #databse user
+    public $pass = "1234"; #database password
 
     public $conn = null;
     public function __construct()
