@@ -21,7 +21,8 @@ class Mailer
             $mail->Username = "[ENTER EMAIL]";
             $mail->Password = "[ENTER YOUR PASSWORD]";
             $mail->SMTPSecure = "STARTTLS"; # For microsoft account
-            $mail->Port = 587; # this differs depending on the service provider 
+            $mail->Port = 587; # this differs depending on the service provider
+            $mail->setFrom('[EMAIL]', '[NAME]'); 
 
         }
         catch(Exception $e)
