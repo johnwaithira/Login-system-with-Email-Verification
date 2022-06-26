@@ -3,12 +3,12 @@
 
     $app = new App();
 
-    if(isset($_POST['login']))
+    if(isset($_POST['verify']))
     {
         
-    $app::login($_POST);
         
     }
+    $app::header();
 ?>
 <title>Verify Account</title>
     
