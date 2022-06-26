@@ -38,6 +38,8 @@ class Mailer
             $mail ->Body = $body;
             $mail ->send();
 
+            return true;
+
         }
         catch(Exception $e)
         {
