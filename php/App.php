@@ -174,10 +174,11 @@ class App
 
         if($data['verified'] == 0)
         {
-            $status = "not verified";
+            $status = "not verified .<a style='color:blue;' href='./verify.php?email='". $data['email']."''>Verify</a>";
         }
         else{
-            $status = "not verified .<a href='./verify.php?email='". $data['email']."''>Verify</a>";
+            $status = "Verified";
+           
         }
         $details = '
            <div class="p-t-20">
