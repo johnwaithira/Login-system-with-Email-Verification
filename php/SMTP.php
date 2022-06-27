@@ -31,8 +31,8 @@ class Mailer
             $mail->isSMTP();
             $mail->Host =  "smtp.office365.com"; # in my case am using microsoft account
             $mail->SMTPAuth = true;
-            $mail->Username = "some_coder_ke@outlook.com";
-            $mail->Password = "amacoder_20";
+            $mail->Username = "SENDER EMAIL";
+            $mail->Password = "SENDER EMAIL PASSWORD";
             $mail->SMTPSecure = "STARTTLS"; # For microsoft account
             $mail->Port = 587; # this differs depending on the service provider
             $mail->setFrom('some_coder_ke@outlook.com', 'Developer');
